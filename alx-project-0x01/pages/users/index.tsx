@@ -37,5 +37,6 @@ export const getStaticProps = async () => {
   };
 };
 
+
 export default Users;
 
