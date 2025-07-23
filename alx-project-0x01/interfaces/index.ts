@@ -18,4 +18,5 @@ export interface PostProps {
   body: string;
   userId: number;
   name?: string; // Optional field for the user's name
+  catchPrase: string;
 }
