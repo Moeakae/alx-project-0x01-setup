@@ -1,23 +1,30 @@
-import React from 'react';
+// pages/users/index.tsx
 
-const Home: React.FC = () => {
-    return (
-        <div className="flex justify-center items-center h-screen">
-            <h1 className="text-7x1 font-thin">Welcome Page</h1>
-            
+import { UserCard } from '@/components/common/UserCard';
+import { UserProps } from '@/interfaces';
+
+const users: UserProps[] = [
+  
+];
+const UsersPage: React.FC = () => {
+  return (
+    <div className="flex flex-col h-screen">
+      <header className="bg-blue-700 text-white p-4">
+        <h1 className="text-2xl font-semibold">Users</h1>
+      </header>
+      <main className="p-4">
+        <div className="grid grid-cols-3 gap-4">
+          {users.map((user) => (
+            <UserCard
+                  key={user.id}
+                  id={user.id}
+                  name={user.name}
+                  email={user.email}
+                  avatar={user.avatar}
+                  role={user.role} username={''}            />
+          ))}
         </div>
-    );
-}
-
-export async function getStaticProps() {
-  const response = await fetch("https://jsonplaceholder.typicode.com/users")
-  const posts = await response.json()
-
-  return {
-    props: {
-      posts
-    }
-  }
-}
-
-export default Home;
+      </main>
+    </div>
+  );
+};
