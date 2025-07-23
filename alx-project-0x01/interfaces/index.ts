@@ -5,30 +5,12 @@ export interface UserProps {
   email: string;
   avatar: string;
   role: 'admin' | 'user' | 'guest'; 
-  username: string
+  username: string;
+  street: string;
+  
 }
 
-export interface CompanyProps {
-  name: string;
-  catchPhrase: string;
-  bs: string;
-}
 
-const users: UserProps[] = [
-  {
-    id: 1,
-    name: 'Leanne Graham',
-    username: 'Bret',
-    email: 'Sincere@april.biz',
-    avatar: 'https://i.pravatar.cc/150?img=1',
-    role: 'admin',
-
-    
-        
-    }
-  
-  
-];
 export interface PostProps {
   id: number;
   title: string;
