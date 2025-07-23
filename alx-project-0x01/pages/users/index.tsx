@@ -28,4 +28,4 @@ const Users = () => {
 
   
 
- export default UserCard;
+ export default Users;
