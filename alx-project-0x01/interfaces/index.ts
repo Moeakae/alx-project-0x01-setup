@@ -7,6 +7,7 @@ export interface UserProps {
   role: 'admin' | 'user' | 'guest'; 
   username: string;
   street: string;
+  catchPrase: string;
   
 }
 
