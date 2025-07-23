@@ -1,12 +1,12 @@
 import React from 'react';
 
-const UsersPage: React.FC = () => {
+const Home: React.FC = () => {
     return (
-        <div>
-            <h1>Users</h1>
-            <p>Welcome to the Users page.</p>
+        <div className="flex justify-center items-center h-screen">
+            <h1 className="text-7x1 font-thin">Welcome Page</h1>
+            
         </div>
     );
 };
 
-export default UsersPage;
+export default Home;
