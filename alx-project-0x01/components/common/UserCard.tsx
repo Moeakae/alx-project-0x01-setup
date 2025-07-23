@@ -1,7 +1,7 @@
 
 import { UserProps } from '@/interfaces';
 
-const UserCard = ({ id, name, email, avatar, role }: UserProps) => {
+export const UserCard = ({ id, name, email, avatar, role }: UserProps) => {
   return (
     <div className="p-4 border rounded-lg shadow-md">
       <img src={avatar} alt={name} className="w-16 h-16 rounded-full mb-2" />
