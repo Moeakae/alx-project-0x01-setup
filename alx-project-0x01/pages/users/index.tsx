@@ -17,25 +17,19 @@ const Users = ({ posts }: UsersPageProps) => {
   );
 };
 
-export const getStaticProps = async () => {
-  const response = await fetch('https://jsonplaceholder.typicode.com/users');
-  const data = await response.json();
 
   
-  const posts: UserProps[] = data.map((user: any) => ({
-    id: user.id,
-    name: user.name,
-    email: user.email,
-    avatar: `https://i.pravatar.cc/150?u=${user.id}`, 
-    role: 'user', 
-  }));
+
+export async function getStaticProps() {
+  const response = await fetch("https://jsonplaceholder.typicode.com/users")
+  const posts = await response.json()
 
   return {
     props: {
-      posts,
-    },
-  };
-};
+      posts
+    }
+  }
+}
 
 
 export default Users;
