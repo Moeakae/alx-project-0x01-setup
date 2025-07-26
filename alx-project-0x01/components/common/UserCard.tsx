@@ -17,11 +17,7 @@ const UserCard: React.FC<UserProps> = ({ name, email, avatar, role }) => {
           <p className="text-sm text-gray-500">{email}</p>
           <span className="text-xs mt-1 inline-block bg-indigo-100 text-indigo-700 px-2 py-0.5 rounded-full capitalize">
             {role}
-            
-
           </span>
-          
-
         </div>
       </div>
     </div>
@@ -29,4 +25,3 @@ const UserCard: React.FC<UserProps> = ({ name, email, avatar, role }) => {
 };
 
 export default UserCard;
-

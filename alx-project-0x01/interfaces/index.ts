@@ -7,7 +7,7 @@ export interface UserProps {
   role: 'admin' | 'user' | 'guest'; 
   username: string;
   street: string;
-  UserPropscatchPrase: string;
+  catchPhrase: string;
   
 }
 
@@ -18,5 +18,7 @@ export interface PostProps {
   body: string;
   userId: number;
   name?: string; // Optional field for the user's name
-  catchPrase: string;
+  catchPhrase: string;
 }
+
+
