@@ -46,6 +46,6 @@ myContainer.posts.forEach((post) => {
 }
 )
 export interface UserModalProps {
-  onclose: () => void;
-  onsubmit: (post: UserProps) => void;
+  onClose: () => void;
+  onSubmit: (post: UserProps) => void;
 }
