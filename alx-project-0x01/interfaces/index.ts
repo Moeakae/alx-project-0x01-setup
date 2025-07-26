@@ -45,3 +45,7 @@ myContainer.posts.forEach((post) => {
   console.log(post.title);
 }
 )
+export interface UserModalProps {
+  onclose: () => void;
+  onsubmit: (post: UserProps) => void;
+}
